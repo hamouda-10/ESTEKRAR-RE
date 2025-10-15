@@ -185,6 +185,10 @@ a:focus {
      font-family: 'Marhey', cursive;
 }
 
+.navbar-brand{
+    font-size: 23px;
+}
+
 .nav-bar .container-fluid {
     padding: 0;
     
