@@ -184,7 +184,6 @@ a:focus {
     transition: .1s;
      font-family: 'Marhey', cursive;
 }
-
 .navbar-brand{
     font-size: 23px;
 }
@@ -262,6 +261,7 @@ a:focus {
     
     .nav-bar .navbar-brand {
         display: none;
+     font-size: 23px;
     }
     
     .nav-bar a.nav-link {
