@@ -109,15 +109,19 @@ a:focus {
 .top-bar .logo h1 {
     margin: 0;
     color: #000000;
-    font-size: 51px;
+    font-size: 15vw; /* حجم متغير حسب الشاشة */
     line-height: 60px;
     font-weight: 1000;
     vertical-align: middle;
+    text-align: center; /* يوسّط النص */
+    white-space: nowrap; /* يمنع انقسام الكلمة */
 }
+
 
 .top-bar .logo img {
     max-width: 100%;
     max-height: 70px;
+    
 }
 
 .top-bar .top-bar-item {
