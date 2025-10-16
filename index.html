@@ -48,7 +48,7 @@
                                    
     <h1 style="position: relative; margin-right: 30px;">
         <img src="img/11.png" alt="Logo" style="width:70px; height:70px; vertical-align:middle; margin-right:5px; margin-bottom: 20px;">
-    Estekrar   <span style="position: absolute; top: -20px;  font-size: 25px; color: #000000;  margin-left: -10px; margin-top: 10px;">RE</span>
+    Estekrar   <span style="position: absolute; top: -20px;  font-size: 20px; color: #000000;  margin-left: -10px; margin-top: 10px;">RE</span>
 </h1>
 
                                     <!-- <img src="img/logo.jpg" alt="Logo"> -->
@@ -102,7 +102,7 @@
             <div class="nav-bar">
                 <div class="container-fluid">
                     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-                       <a href="#" class="navbar-brand" style="color: #fdbe33;">MENU</a>
+                       <a href="#" class="navbar-brand" style="color: #fdbe33; ">MENU</a>
 
                        <button type="button" class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#navbarCollapse">
     <span class="custom-icon">
@@ -534,7 +534,7 @@
   <div class="container">
     <button type="button" class="btn-play"
             data-toggle="modal"
-            data-src="https://www.youtube.com/embed/1seK0FPPeak?rel=0&modestbranding=1&autoplay=1"
+            data-src="https://www.youtube.com/embed/1seK0FPPeak?rel=0&modestbranding=1"
             data-target="#videoModal">
       <span></span>
     </button>
@@ -563,17 +563,28 @@
 
 <!-- JavaScript -->
 <script>
-  var videoSrc;
+  var videoSrc = "";
 
+  // عند الضغط على الزر
   $('.btn-play').click(function () {
-    videoSrc = $(this).data("src");
+    videoSrc = $(this).data("src") + "&autoplay=1";
     $('#video').attr('src', videoSrc);
   });
 
+  // عند غلق النافذة
   $('#videoModal').on('hidden.bs.modal', function () {
-    $('#video').attr('src', '');
+    $('#video').attr('src', ''); // يفرغ الرابط فوراً
+  });
+
+  // تأكيد إضافي لإيقاف الصوت فور الضغط على زر الغلق
+  document.querySelectorAll('.close').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const video = document.getElementById('video');
+      video.src = ''; // تفريغ الرابط
+    });
   });
 </script>
+
 
 
 
