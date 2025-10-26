@@ -50,6 +50,7 @@ a:focus {
 
 .btn:focus {
     box-shadow: none;
+    
 }
 
 .wrapper {
@@ -65,11 +66,11 @@ a:focus {
     display: none;
     background: #fdbe33;
     color: #000000;
-    width: 44px;
-    height: 44px;
+    width: 50px;
+    height: 50px;
     text-align: center;
     line-height: 1;
-    font-size: 22px;
+    font-size: 28px;
     right: 15px;
     bottom: 15px;
     transition: background 0.1s;
@@ -86,8 +87,11 @@ a:focus {
 }
 
 .btn {
-    transition: .1s;
+    border-radius: 10px !important;
+    padding: 10px 15px;
+    font-weight: 900;
 }
+
 
 
 /**********************************/
@@ -197,9 +201,13 @@ a:focus {
     background: #fdbe33;
     transition: .1s;
      font-family: 'Marhey', cursive;
+       border-bottom: 3px solid  #fdbe33 !important; /* فاصل باللون الذهبي */
+    
 }
 .navbar-brand{
-    font-size: 23px;
+    font-size: 25px;
+     font-weight: 600;
+     margin-top: 5px;
 }
 
 .nav-bar .container-fluid {
@@ -219,22 +227,35 @@ a:focus {
 .nav-bar .navbar {
     height: 100%;
     background: #000000 !important;
-    
 }
+
+@media (min-width: 992px) {
+    .nav-bar .navbar {
+        height: 85px !important;
+    }
+}
+
 
 .navbar-dark .navbar-nav .nav-link,
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-    padding: 10px 10px 8px 10px;
-    color: #ffffff;
-    
+    padding: 8px 8px 8px 10px;
+    color: #ffffff ;
+    border: 2px solid #fdbe33 !important; /* حد ذهبي متساوي */
+    border-radius: 10px !important; /* زوايا دائرية */
+    max-width: 100%;
+    margin-right: 10px; /* مسافة بين كل زر */
+      margin-bottom: 5px; /* مسافة بين كل زر */
+    font-weight: 510 !important;
+
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
     color: #fdbe33;
     transition: none;
+    
 }
 
 .nav-bar .dropdown-menu {
@@ -250,6 +271,7 @@ a:focus {
     border: 3px solid#fdbe33;
     border-radius: 0;
     font-size: 18px;
+    
 }
 
 
@@ -282,12 +304,13 @@ a:focus {
         padding: 8px 15px;
         font-size: 18px;
         text-transform: uppercase;
+        
     }
 }
 
 @media (max-width: 991.98px) {
     .nav-bar .navbar {
-        padding: 15px;
+        padding: 10px;
     }
     
     .nav-bar a.nav-link {
@@ -423,8 +446,8 @@ a:focus {
 }
 
 .carousel .animated {
-    -webkit-animation-duration: 1.5s;
-    animation-duration: 1.5s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
 }
 
 
