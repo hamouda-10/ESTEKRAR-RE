@@ -197,7 +197,6 @@ a:focus {
     background: #fdbe33;
     transition: .1s;
      font-family: 'Marhey', cursive;
-       border-bottom: 3px solid  #fdbe33 !important; /* فاصل باللون الذهبي */
 }
 .navbar-brand{
     font-size: 23px;
@@ -229,15 +228,13 @@ a:focus {
 .navbar-dark .navbar-nav .nav-link.active {
     padding: 10px 10px 8px 10px;
     color: #ffffff;
-      border-bottom: 3px solid  #fdbe33 !important; /* فاصل باللون الذهبي */
-      max-width: 100%;
+    
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
     color: #fdbe33;
     transition: none;
-    
 }
 
 .nav-bar .dropdown-menu {
@@ -253,7 +250,6 @@ a:focus {
     border: 3px solid#fdbe33;
     border-radius: 0;
     font-size: 18px;
-    
 }
 
 
@@ -286,13 +282,12 @@ a:focus {
         padding: 8px 15px;
         font-size: 18px;
         text-transform: uppercase;
-        
     }
 }
 
 @media (max-width: 991.98px) {
     .nav-bar .navbar {
-        padding: 10px;
+        padding: 15px;
     }
     
     .nav-bar a.nav-link {
@@ -428,8 +423,8 @@ a:focus {
 }
 
 .carousel .animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
 }
 
 
