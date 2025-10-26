@@ -43,7 +43,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-    color: #fdbe33;
+    color: #fdbe33 ;
     outline: none;
     text-decoration: none;
 }
