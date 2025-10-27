@@ -202,7 +202,7 @@ a:focus {
     transition: .1s;
      font-family: 'Marhey', cursive;
        border-bottom: 3px solid  #fdbe33 !important; /* فاصل باللون الذهبي */
-    
+      border-top: 3px solid  #fdbe33 !important; /* فاصل باللون الذهبي */
 }
 .navbar-brand{
     font-size: 25px;
