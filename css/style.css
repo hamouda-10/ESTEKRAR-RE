@@ -377,22 +377,27 @@ a:focus {
 }
 
 .carousel .carousel-caption p {
-    color: #ffffff;
-    font-size: 30px;
-    margin-bottom: 15px;
+    
+    font-size: 40px;
+    
     letter-spacing: 1px;
+
+
+     margin-bottom: 30px;
+        color:black;
+        font-weight: 900;
 }
 
 .carousel .carousel-caption h1 {
     color: #fdbe33;
-    font-size: 60px;
+    font-size: 80px;
     font-weight: 700;
     margin-bottom: 35px;
 }
 
 .carousel .carousel-caption .btn {
     padding: 15px 35px;
-    font-size: 18px;
+    font-size:20px;
     font-weight: 900;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -401,6 +406,9 @@ a:focus {
     border: 2px solid #ffffff;
     border-radius: 0;
     transition: .1s;
+        background-color:  #fdbe33;
+        color: #000000;
+        border: 4px solid #000000;
 }
 
 
