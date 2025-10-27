@@ -384,7 +384,7 @@ a:focus {
 }
 
 .carousel .carousel-caption h1 {
-    color: #ffffff;
+    color: #fdbe33;
     font-size: 60px;
     font-weight: 700;
     margin-bottom: 35px;
@@ -393,26 +393,22 @@ a:focus {
 .carousel .carousel-caption .btn {
     padding: 15px 35px;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 900;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #000000;
     background: transparent;
     border: 2px solid #ffffff;
     border-radius: 0;
-    transition: .3s;
+    transition: .1s;
 }
 
-.carousel .carousel-caption .btn:hover {
-    color: #000000;
-    background: #fdbe33;
-    border-color: #fdbe33;
-}
+
 
 @media (max-width: 767.98px) {
     .carousel .carousel-caption h1 {
         font-size: 40px;
-        font-weight: 700;
+        font-weight: 900;
     }
     
     .carousel .carousel-caption p {
@@ -429,25 +425,32 @@ a:focus {
 
 @media (max-width: 575.98px) {
     .carousel .carousel-caption h1 {
-        font-size: 30px;
-        font-weight: 500;
+        font-size: 40px;
+        font-weight: 900;
+        
     }
     
     .carousel .carousel-caption p {
-        font-size: 16px;
+        font-size: 22px;
+        margin-bottom: 30px;
+        color:black;
+        font-weight: 900;
     }
     
     .carousel .carousel-caption .btn {
         padding: 10px 25px;
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 900;
         letter-spacing: 0;
+        background-color:  #fdbe33;
+        color: #000000;
+        border: 3px solid #000000;
     }
 }
 
 .carousel .animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
 }
 
 
@@ -1079,25 +1082,25 @@ a:focus {
 .team .team-item:hover .team-social a:first-child {
     background: #30ee00;
     left: 50px;
-    transition: .3s 0s;
+    transition: .1s .1s;
 }
 
 .team .team-item:hover .team-social a:nth-child(2) {
     background: #0045d9;
     left: 50px;
-    transition: .3s .1s;
+    transition: .1s .1s;
 }
 
 .team .team-item:hover .team-social a:nth-child(3) {
     background: #006ad3;
     left: 50px;
-    transition: .3s .2s;
+    transition: .1s .1s;
 }
 
 .team .team-item:hover .team-social a:nth-child(4) {
     background: #e30071;
     left: 50px;
-    transition: .3s .3s;
+    transition: .1s .1s;
 }
 
 
@@ -1370,7 +1373,7 @@ a:focus {
     color: #030f27;
     background: #fdbe33;
     border-radius: 0;
-    transition: .3s;
+    transition: .1s;
 }
 
 .blog .blog-item:hover a.btn {
@@ -1380,18 +1383,20 @@ a:focus {
 .blog .blog-meta {
     position: relative;
     padding: 25px 0 10px 0;
-    background: #f3f6ff;
+    background: #fdbe33;
 }
 
 .blog .blog-meta::after {
     position: absolute;
     content: "";
-    width: 100px;
+    width: 100%;        /* جعل الخط يغطي كامل العرض */
     height: 1px;
-    left: calc(50% - 50px);
+    left: 0;            /* بداية من اليسار */
     bottom: 0;
     background: #fdbe33;
+    border-bottom: 3px solid #000000 !important; /* فاصل باللون الذهبي */
 }
+
 
 .blog .blog-meta p {
     display: inline-block;
@@ -1410,7 +1415,8 @@ a:focus {
 
 .blog .blog-text {
     padding: 10px 25px 25px 25px;
-    background: #f3f6ff;
+    background: #fdbe33;
+ 
 }
 
 .blog .blog-text p {
