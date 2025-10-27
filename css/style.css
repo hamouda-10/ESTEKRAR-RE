@@ -461,6 +461,39 @@ a:focus {
     animation-duration: 0.5s;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+    width: 40px;          /* حجم الزر */
+    height: 40px;
+    background: #fdbe33;  /* لون الخلفية */
+    border-radius: 20%;    /* شكل دائري */
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+    /* منع أي تأثير عند الهوفر أو التركيز */
+    opacity: 1 !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 30px;
+    height: 25px;
+    filter: invert(1) brightness(5);
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+    background: #fdbe33 !important;  
+    opacity: 1 !important;
+    filter: none !important;
+}
+
 
 /*******************************/
 /******* Page Header CSS *******/
