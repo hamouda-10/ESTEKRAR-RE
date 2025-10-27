@@ -1069,9 +1069,9 @@ a:focus {
 
 .team .team-social a {
     position: relative;
-    left: 0;
-    width: 60px;
-    height: 60px;
+    left: 50px; /* جعلها في نفس مكان الهوفر السابق */
+    width: 70px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1079,29 +1079,23 @@ a:focus {
     color: #ffffff;
 }
 
-.team .team-item:hover .team-social a:first-child {
+/* ألوان ثابتة لكل أيقونة */
+.team .team-social a:first-child {
     background: #30ee00;
-    left: 50px;
-    transition: .1s .1s;
 }
 
-.team .team-item:hover .team-social a:nth-child(2) {
+.team .team-social a:nth-child(2) {
     background: #0045d9;
-    left: 50px;
-    transition: .1s .1s;
 }
 
-.team .team-item:hover .team-social a:nth-child(3) {
+.team .team-social a:nth-child(3) {
     background: #006ad3;
-    left: 50px;
-    transition: .1s .1s;
 }
 
-.team .team-item:hover .team-social a:nth-child(4) {
+.team .team-social a:nth-child(4) {
     background: #e30071;
-    left: 50px;
-    transition: .1s .1s;
 }
+
 
 
 /*******************************/
